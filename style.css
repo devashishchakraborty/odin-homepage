@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    --theme-color: #8c5dd9;
+    --secondary-text-color: #565656;
+}
+
+
+header{
+    height: 100%;
+    width: 100%;
+}
+
+header .background{
+    position: relative;
+    background-color: var(--theme-color);
+    height: 98%;
+    width: 100%;
+    transform: skewY(-12deg);
+    transform-origin: left;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.aboutMe{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    box-sizing: border-box;
+}
+
+.aboutMe .desc{
+    background-color: white;
+    height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.desc h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.desc .content{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: var(--secondary-text-color);
+    text-align: justify;
+
+}
+
+.aboutMe > img{
+    height: 582px;
+    width: 550px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.aboutMe .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.aboutMe .links a > img{
+    height: 2em;
+    width: 2em;
+}
