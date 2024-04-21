@@ -45,9 +45,8 @@ header .background{
 
 .aboutMe .container{
     background-color: white;
-    height: 420px;
+    height: 400px;
     padding: 40px;
-    padding-left: 0px;
     box-sizing: border-box;
     /* display: flex;
     flex-direction: column;
@@ -64,8 +63,14 @@ header .background{
         font-size: 1.2em;
         color: var(--secondary-text-color);
         min-width: 500px;
-    
+        margin-bottom: 32px;
     }
+
+    /* .name {
+        position: relative;
+        top: -100px;
+        left: 100px;
+    } */
 }
 
 .aboutMe .container > img{
@@ -74,10 +79,7 @@ header .background{
     border-radius: 4px;
     z-index: 1;
     float: left;
-    position: relative;
-    left: -40px;
-    top: -130px;
-    margin-bottom: -100px;
+    transform: translate(-40px, -24%);
 }
 
 .aboutMe .links {
@@ -110,9 +112,10 @@ main > div{
 
 main .worksGrid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 450px));
+    grid-template-columns: repeat(3, minmax(300px, 360px));
     grid-template-rows: repeat(2, 400px);
-    gap: 100px;
+    gap: 80px;
+    justify-content: space-evenly;
 }
 
 
@@ -178,6 +181,7 @@ footer .contact {
     justify-content: space-between;
     gap: 50px;
     font-size: 1.6em;
+    align-items: center;
 }
 
 .contact .info {
@@ -209,12 +213,83 @@ footer .contact > img {
 }
 
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1260px) {
     .aboutMe .container > img{
         height: 500px;
+        transform: translate(-40px, -18%);
     }
+
+    footer .contact > img {
+        width: 500px;
+    }
+
+}
+
+/* @media screen and (max-width: 1164px){
+    .aboutMe .container > img{
+        height: 500px;
+        top: -90px;
+    }
+
+    .aboutMe .container {
+        height: 400px;
+    }
+} */
+
+@media screen and (max-width: 1164px){
+    .aboutMe .container > img{
+        position: relative;
+        height: 450px;
+        transform: translate(0px);
+        left: -100px;
+        top: -100px;
+        margin-right: -60px;
+        margin-bottom: -80px;
+    }
+
+    .aboutMe .container {
+        height: fit-content;
+        margin-top: auto;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    .aboutMe .links{
+        display: none;
+    }
+
+    .aboutMe .container .content{
+        margin-bottom: 0px;
+    }
+
 
     header .background{
         height: 80%;
     }
+
+    main .worksGrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 400px));
+        grid-template-rows: repeat(3, minmax(300px, 400px));
+    }
+
+    footer .contact > img {
+        content: url("images/aboutMe-tablet.jpeg");
+        width: 300px;
+    }
+
+    footer .contact {
+        font-size: 1.4em;
+        gap: 40px;
+    }
+
+    main, footer{
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    
 }
