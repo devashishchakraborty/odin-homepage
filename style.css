@@ -249,7 +249,7 @@ footer .contact > img {
 
     .aboutMe .container {
         height: fit-content;
-        margin-top: auto;
+        /* margin-top: auto; */
 
         h1{
             text-align: center;
@@ -276,7 +276,7 @@ footer .contact > img {
     }
 
     footer .contact > img {
-        content: url("images/aboutMe-tablet.jpeg");
+        content: url("images/contactMe-tablet.jpeg");
         width: 300px;
     }
 
