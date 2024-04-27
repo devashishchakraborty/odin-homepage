@@ -1,7 +1,7 @@
 # Homepage
 ## About
 - Homepage is a responsive project created using HTML and CSS as a simple About me website. 
-- Live Preview -> [Here](https://devashishchakraborty/github.io/odin-homepage)
+- Live Preview -> [Here](https://devashishchakraborty.github.io/odin-homepage)
 
 ## Screenshots
 
