@@ -310,7 +310,7 @@ footer .contact > img {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        padding: 50px;
+        padding: 40px;
         height: auto;
         min-width: 400px;
     }
