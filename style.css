@@ -242,6 +242,11 @@ footer .contact > img {
         margin-bottom: -80px;
     }
 
+    .aboutMe{
+        padding: 120px;
+        padding-right: 80px;
+    }
+
     .aboutMe .container {
         height: fit-content;
         /* margin-top: auto; */
